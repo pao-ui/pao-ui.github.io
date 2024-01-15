@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="never" name="referrer">
+    <title>.</title>
+    <link href="https://lib.baomitu.com/twitter-bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-user-select: text;
+            outline: 0;
+            overflow-wrap: break-word !important;
+            visibility: visible !important;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            -webkit-appearance: none;
+            color: #333;
+            line-height: 1.6;
+            font-family: -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+            overflow: auto;
+            overflow-x: hidden;
+            font-size: 14px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p,
+        ul,
+        ol,
+        dl,
+        dd,
+        fieldset,
+        textarea {
+            margin: 0;
+            margin-bottom: 0px;
+            max-width: 100%;
+        }
+
+        .content {
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+
+        .title {
+            line-height: 1.4;
+            margin-bottom: 34px;
+        }
+
+        .article {
+            max-width: 100% !important;
+            font-family: 黑体;
+            box-sizing: border-box !important;
+            overflow-wrap: break-word !important;
+            overflow: hidden;
+            color: #3E3E3E;
+            font-size: 17px;
+            word-wrap: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            text-align: justify;
+        }
+
+        .content img {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        iframe {
+            text-align: center;
+        }
+
+        .panel {
+            margin: 40px 20px 0;
+        }
+
+        .panel .panel-body {
+            padding: 0 15px;
+        }
+
+        .panel .media {
+            margin: 11px 0;
+        }
+
+        .media-body p {
+            color: rgba(0, 0, 0, 0.9);
+            font-size: 17px;
+            text-overflow: -o-ellipsis-lastline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            position: relative;
+            z-index: 1;
+        }
+
+        .p-thumb img {
+            width: 50px;
+            height: 50px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+
+        .p-head {
+            color: #f77b6f;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        a,
+        a:hover,
+        a:focus {
+            text-decoration: none;
+            outline: none;
+        }
+    </style>
+    <script src="https://lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://lib.baomitu.com/layer/3.1.1/layer.js"></script>
+    <script src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152" type="text/javascript" charset="utf-8"></script>
+    <script src="https://lib.baomitu.com/clipboard.js/2.0.6/clipboard.min.js"></script>
+</head>
+
+<body>
+    <div class="content" id="main">
+        <div class="title">
+            <h3 id="content-title"></h3>
+        </div>
+        <div class="acticle"></div>
+        <br>
+        <div id="pwdOpen">
+            <p style="text-align: center;">★☆★☆存在隐藏内容☆★☆★</p>
+            <h2 style="text-align: center;">↓</h2>
+            <p style="text-align: center;">点击下方复制按钮转发到群后打开链接</p>
+            <br>
+            <div class="form-group">
+                <button style="text-align: center!important;" id="jsPwd" class="btn btn-success btn-block clipboard"
+                    data-clipboard-text="" onclick="jiesuo()">点击复制转发</button>
+            </div>
+        </div>
+    </div>
+    <div id="tuijian"></div>
+</body>
+<script src="https://tz.jxqhdm.cn/adv.js"></script>
+<script>
+    var version_='jsjiami.com.v7';var _0x2875e0=_0x5208;(function(_0x36aa89,_0x3c0ec5,_0x11c957,_0x1593a1,_0x46e3e3,_0x184a6c,_0x106358){return _0x36aa89=_0x36aa89>>0x8,_0x184a6c='hs',_0x106358='hs',function(_0x42bcf0,_0xa5b917,_0x58a0fa,_0x4a2a89,_0x3be512){var _0x4548aa=_0x5208;_0x4a2a89='tfi',_0x184a6c=_0x4a2a89+_0x184a6c,_0x3be512='up',_0x106358+=_0x3be512,_0x184a6c=_0x58a0fa(_0x184a6c),_0x106358=_0x58a0fa(_0x106358),_0x58a0fa=0x0;var _0x5326c6=_0x42bcf0();while(!![]&&--_0x1593a1+_0xa5b917){try{_0x4a2a89=-parseInt(_0x4548aa(0xd9,'#8k^'))/0x1+parseInt(_0x4548aa(0x90,'I2[!'))/0x2*(-parseInt(_0x4548aa(0xca,'#8k^'))/0x3)+-parseInt(_0x4548aa(0x78,'gzg7'))/0x4*(-parseInt(_0x4548aa(0xe9,'^wZP'))/0x5)+parseInt(_0x4548aa(0x124,']LnB'))/0x6+-parseInt(_0x4548aa(0xbb,'MgA8'))/0x7*(parseInt(_0x4548aa(0x103,'JVvl'))/0x8)+-parseInt(_0x4548aa(0x121,'Ze[h'))/0x9+parseInt(_0x4548aa(0x11a,'#8k^'))/0xa;}catch(_0x2efeac){_0x4a2a89=_0x58a0fa;}finally{_0x3be512=_0x5326c6[_0x184a6c]();if(_0x36aa89<=_0x1593a1)_0x58a0fa?_0x46e3e3?_0x4a2a89=_0x3be512:_0x46e3e3=_0x3be512:_0x58a0fa=_0x3be512;else{if(_0x58a0fa==_0x46e3e3['replace'](/[ekHxGTlfKQIqngLrRdEB=]/g,'')){if(_0x4a2a89===_0xa5b917){_0x5326c6['un'+_0x184a6c](_0x3be512);break;}_0x5326c6[_0x106358](_0x3be512);}}}}}(_0x11c957,_0x3c0ec5,function(_0x33780e,_0x4cb623,_0x5ea688,_0x2c6236,_0x523f2b,_0x56d4ce,_0x591802){return _0x4cb623='\x73\x70\x6c\x69\x74',_0x33780e=arguments[0x0],_0x33780e=_0x33780e[_0x4cb623](''),_0x5ea688='\x72\x65\x76\x65\x72\x73\x65',_0x33780e=_0x33780e[_0x5ea688]('\x76'),_0x2c6236='\x6a\x6f\x69\x6e',(0x1408df,_0x33780e[_0x2c6236](''));});}(0xc100,0x98b1e,_0x3a8a,0xc3),_0x3a8a)&&(version_=_0x3a8a);function getQueryString(_0x528c5f){var _0x5cfe79=_0x5208,_0x4acc6e={'gMxCz':function(_0x29d8e4,_0x5486be){return _0x29d8e4+_0x5486be;},'tvRHF':_0x5cfe79(0x92,'VfPG'),'ZisIr':_0x5cfe79(0xbf,'&ui]'),'nVEJg':function(_0x11353d,_0x5c730e){return _0x11353d(_0x5c730e);}},_0x21af67=new RegExp(_0x4acc6e[_0x5cfe79(0xaf,'gzg7')](_0x4acc6e['tvRHF']+_0x528c5f,_0x4acc6e[_0x5cfe79(0xf4,']LnB')]),'i'),_0x45c3a1=window['location']['search'][_0x5cfe79(0xf5,'vA]&')](0x1)[_0x5cfe79(0x7e,'MgA8')](_0x21af67);if(_0x45c3a1!=null)return _0x4acc6e[_0x5cfe79(0xa7,'wpMG')](unescape,_0x45c3a1[0x2]);return null;}var id=getQueryString('t'),ip=getQueryString('ip'),adsView=0x0;function getContent(){var _0x57213e=_0x5208,_0x238202={'WLhYt':function(_0x3fd716,_0x3e4ea4){return _0x3fd716===_0x3e4ea4;},'CUEQL':_0x57213e(0x77,'qwCQ'),'vvlhO':function(_0x54ea27,_0x3d0a1f){return _0x54ea27==_0x3d0a1f;},'WaLxy':_0x57213e(0x13a,'1GXa'),'PhBIY':_0x57213e(0xa5,'qwCQ'),'Screr':_0x57213e(0xea,'i[)H'),'YpqlW':function(_0x52b6b3,_0x286d82){return _0x52b6b3+_0x286d82;},'fQgce':_0x57213e(0x118,'9PWO'),'bMtbu':_0x57213e(0xd4,'Ze[h'),'QVUIJ':_0x57213e(0x131,'VfPG'),'FRsLD':_0x57213e(0xe6,'g!@3'),'pcIga':'\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22media-body\x22>','WTeXN':function(_0x179341,_0x1a53a8){return _0x179341+_0x1a53a8;},'bVZSR':_0x57213e(0x13c,']LnB'),'LvTPE':_0x57213e(0xd7,'V17N'),'rjiyW':_0x57213e(0xe7,'MgA8'),'gVKvX':'\x09\x09</div>','KTKZQ':_0x57213e(0x14a,'V17N'),'lJORn':_0x57213e(0x7a,'JVvl'),'xOLtG':'\x09\x09<div\x20class=\x22panel-body\x22>','IBtkk':'<section\x20class=\x22panel\x22>','fHuJG':function(_0x489aa0,_0x2b8937){return _0x489aa0(_0x2b8937);},'BQncr':_0x57213e(0xac,']LnB'),'GgRkF':_0x57213e(0xe5,'vA]&'),'KURYm':function(_0x304854,_0x2b48e2){return _0x304854+_0x2b48e2;},'ySKDF':_0x57213e(0x8f,'czSS'),'ncoeW':_0x57213e(0x10a,'t724'),'XmTPf':function(_0x355502,_0x24fba6){return _0x355502==_0x24fba6;},'kJDDt':function(_0x4bce10,_0x5997b2){return _0x4bce10+_0x5997b2;},'zfJCR':function(_0x555621,_0x434e56){return _0x555621(_0x434e56);},'xkBVv':_0x57213e(0x115,'tMz$'),'qkuZB':function(_0x398e09,_0x322524){return _0x398e09!==_0x322524;},'GbeCb':'VXsyN','xhNXa':function(_0x283dd2,_0x30ff5f){return _0x283dd2<_0x30ff5f;},'TdiKO':_0x57213e(0xb1,'HNww'),'RdGvA':_0x57213e(0x13b,'JVvl'),'wRrYq':_0x57213e(0xb4,'[r^&'),'RwZqm':_0x57213e(0xf3,')ahO'),'CqMFe':_0x57213e(0x11d,'l2A6'),'LBYAv':_0x57213e(0xfe,'92d7'),'dhSzD':_0x57213e(0xbc,'Nm!B'),'dtyjw':function(_0xa84445,_0x284681){return _0xa84445(_0x284681);},'MRifY':function(_0x2d750f,_0x1babbd){return _0x2d750f===_0x1babbd;},'QSxxK':_0x57213e(0x144,'#8k^'),'WTaRu':'wrzZL','qVVtG':_0x57213e(0x9d,'Bx1N'),'nNNBU':_0x57213e(0x99,'vA]&'),'bxwzN':_0x57213e(0xce,'l2A6'),'hNvGf':function(_0x4838b0,_0x43484b){return _0x4838b0+_0x43484b;},'rfcRz':_0x57213e(0x141,'gzg7'),'UpVBc':_0x57213e(0xef,'RYpd'),'cEOAD':_0x57213e(0x8c,'92d7'),'RqSrX':_0x57213e(0x117,'&ui]'),'eKAJW':'https://ww.jxqhdm.cn/getContent','lZVwl':'json'};$[_0x57213e(0x8a,'gzg7')]({'type':_0x238202[_0x57213e(0x113,'Nm!B')],'url':_0x238202['eKAJW'],'data':{'code':id,'ip':ip},'dataType':_0x238202[_0x57213e(0xf1,'ppgH')],'async':!![],'success':function(_0x3491a3){var _0x52659a=_0x57213e,_0x4211e2={'pKQtF':function(_0x4c0a43,_0x43e425){var _0x18462e=_0x5208;return _0x238202[_0x18462e(0xfc,'1p&K')](_0x4c0a43,_0x43e425);},'NOPxd':_0x238202[_0x52659a(0x10c,'[r^&')],'KUeIr':_0x52659a(0x7c,'to@9'),'CNfbW':_0x238202['ncoeW'],'UEePv':function(_0xbe850b,_0x3c1df4){var _0x4b00e8=_0x52659a;return _0x238202[_0x4b00e8(0x122,'&ui]')](_0xbe850b,_0x3c1df4);},'Sfdbp':function(_0x58b895,_0x4a1331){return _0x238202['kJDDt'](_0x58b895,_0x4a1331);},'EvSVx':function(_0x567d45,_0x24f4cf){var _0x1d3bf9=_0x52659a;return _0x238202[_0x1d3bf9(0xbe,'RYpd')](_0x567d45,_0x24f4cf);},'LEIOV':_0x238202[_0x52659a(0x12a,'V17N')],'Ljfbr':function(_0x41fb48,_0x6073d5){var _0x142d88=_0x52659a;return _0x238202[_0x142d88(0xd3,'5Tjf')](_0x41fb48,_0x6073d5);},'khOFg':_0x238202['GbeCb'],'eVLEx':_0x238202[_0x52659a(0xcd,'V17N')],'nSSDc':_0x238202[_0x52659a(0x12f,'wpMG')],'yLsBR':_0x238202[_0x52659a(0x91,'1GXa')],'sjKub':_0x52659a(0x74,'^oKC'),'UVAYs':_0x52659a(0xc4,'ppgH'),'LPXyn':_0x238202[_0x52659a(0x136,'qwCQ')],'qPYNe':function(_0x3dc8b3,_0x51e086){var _0x1f6d9e=_0x52659a;return _0x238202[_0x1f6d9e(0x12d,'HNww')](_0x3dc8b3,_0x51e086);},'aXJkE':'1|4|3|2|5|8|6|0|7|9','cQoPH':_0x238202['FRsLD'],'CJYdy':'\x09\x09\x09\x09\x09\x09\x09\x09<img\x20src=\x22','eaOUR':_0x238202[_0x52659a(0xa9,'hdp%')],'EVkyl':_0x238202[_0x52659a(0x114,'I2[!')],'ebQKw':_0x238202[_0x52659a(0x10b,'1GXa')],'oxTJr':_0x238202['RdGvA'],'iCaIA':_0x238202[_0x52659a(0x84,'HNww')],'rVcVC':_0x238202[_0x52659a(0xc5,'t724')],'hulHQ':_0x238202['rjiyW'],'rkZDj':_0x238202[_0x52659a(0x80,'czSS')],'BeSYX':'\x09\x09\x09</div>','BDMcw':_0x238202[_0x52659a(0xf7,'i[)H')]};if(_0x238202['vvlhO'](_0x3491a3['code'],0x1)){if(_0x238202[_0x52659a(0x133,')vN*')](_0x238202[_0x52659a(0x125,'Uy!l')],'oPuVr')){_0x238202[_0x52659a(0x79,'0qd9')]($,_0x238202[_0x52659a(0x112,'to@9')])['text'](_0x238202[_0x52659a(0x13d,'v2&o')](unescape,_0x3491a3['title'][_0x52659a(0xfd,'V17N')](/\\u/g,'%u'))),$(_0x238202['dhSzD'])['html'](_0x238202[_0x52659a(0xb0,'MgA8')](unescape,_0x3491a3['content']['replace'](/\\u/g,'%u')));if(_0x238202[_0x52659a(0x106,'0qd9')](_0x3491a3['qd'],'1')){if(_0x238202[_0x52659a(0x129,'VfPG')](_0x238202[_0x52659a(0xab,'I2[!')],_0x238202[_0x52659a(0x86,'Nm!B')]))_0x13aa21['alert'](_0x1423e8[_0x52659a(0xb2,'g!@3')],{'icon':0x2});else{_0x238202[_0x52659a(0xed,'MP]0')]($,_0x238202[_0x52659a(0xad,'Uy!l')])['hide'](),ads=_0x3491a3[_0x52659a(0x139,'hdp%')];if(ads!==0x1){if(_0x238202[_0x52659a(0x108,'MP]0')](_0x238202[_0x52659a(0x7f,'Bx1N')],_0x238202[_0x52659a(0xb3,'ppgH')])){let _0x37ec62=_0x4211e2['pKQtF'](_0x4211e2[_0x52659a(0x93,'to@9')](_0x4211e2['NOPxd'],_0x2ea23c),_0x4211e2[_0x52659a(0x11f,'wCpq')]);const _0x5e6aef=_0x15fb75[_0x52659a(0xa8,'VfPG')](_0x4211e2['KUeIr']);_0x5e6aef['value']=_0x37ec62,_0x27631f['body']['appendChild'](_0x5e6aef),_0x5e6aef[_0x52659a(0x85,'hdp%')](),_0x41d61a[_0x52659a(0xcb,'HE6#')](_0x4211e2[_0x52659a(0x10d,'moHG')])&&_0x5eb1f4[_0x52659a(0xc8,'V17N')](_0x4211e2[_0x52659a(0xec,'T0#p')]),_0x406bdd['body'][_0x52659a(0x11e,'g!@3')](_0x5e6aef),_0x1f2e06=0x1;}else _0x238202[_0x52659a(0x11c,'JVvl')]($,_0x52659a(0x146,'Ze[h'))[_0x52659a(0x7b,'FkGe')](function(){var _0x4d381e=_0x52659a,_0x1da46b={'sXLGc':function(_0x4922a2,_0x248fbc){var _0x269af0=_0x5208;return _0x4211e2[_0x269af0(0x110,'g!@3')](_0x4922a2,_0x248fbc);},'KHPMt':function(_0x2649a8,_0x5ef601){var _0x5d12fd=_0x5208;return _0x4211e2[_0x5d12fd(0x98,']LnB')](_0x2649a8,_0x5ef601);},'OpODl':function(_0x5b3aa0,_0xea9546){return _0x5b3aa0+_0xea9546;},'MEtRN':_0x4d381e(0x134,'gzg7'),'LrjrL':_0x4211e2[_0x4d381e(0x101,'gzg7')],'OLYzC':_0x4211e2[_0x4d381e(0x8b,'vA]&')],'AcWgi':function(_0x2613df,_0x2a65aa){var _0xa8ca73=_0x4d381e;return _0x4211e2[_0xa8ca73(0xc6,'V17N')](_0x2613df,_0x2a65aa);},'oziQl':_0x4211e2[_0x4d381e(0xf9,'JVvl')]};if(_0x4211e2[_0x4d381e(0x9e,'VfPG')](_0x4211e2['khOFg'],'VXsyN')){var _0x704b5e={'eLqTc':function(_0x562e02,_0x4e38e7){var _0x3a0194=_0x4d381e;return _0x1da46b[_0x3a0194(0xdc,'Nm!B')](_0x562e02,_0x4e38e7);},'FepMp':function(_0x1d7ab9,_0x1b747d){var _0x4d9552=_0x4d381e;return _0x1da46b[_0x4d9552(0x76,'92d7')](_0x1d7ab9,_0x1b747d);},'hQOgQ':function(_0x59285f,_0x341f0c){var _0x32d6db=_0x4d381e;return _0x1da46b[_0x32d6db(0x81,'T0#p')](_0x59285f,_0x341f0c);},'MmuZL':_0x1da46b['MEtRN'],'qBnmp':_0x1da46b[_0x4d381e(0xaa,'1p&K')],'iTXEg':_0x1da46b[_0x4d381e(0x140,'VfPG')]};_0x1da46b['AcWgi'](_0x2eaf6a,_0x1da46b['oziQl'])[_0x4d381e(0xe3,']tfA')](function(){var _0x1c8538=_0x4d381e;if(_0x704b5e[_0x1c8538(0x111,'HE6#')](_0x3d6658,0x0)){let _0x5e1d96=_0x704b5e[_0x1c8538(0xde,'[r^&')](_0x704b5e[_0x1c8538(0x107,'I2[!')](_0x1c8538(0xbd,'VfPG'),_0x5ceccc),_0x704b5e['MmuZL']);const _0x2ddb9f=_0x30089b[_0x1c8538(0xc7,'^wZP')](_0x704b5e[_0x1c8538(0xc9,'T0#p')]);_0x2ddb9f[_0x1c8538(0x73,'92d7')]=_0x5e1d96,_0x367104['body'][_0x1c8538(0xa6,'#8k^')](_0x2ddb9f),_0x2ddb9f['select'](),_0x4ea382['execCommand'](_0x704b5e[_0x1c8538(0xc3,'VfPG')])&&_0x26ec9a['execCommand'](_0x704b5e[_0x1c8538(0x87,'V17N')]),_0x588162['body'][_0x1c8538(0x137,'czSS')](_0x2ddb9f),_0x13a3b5=0x1;}});}else{if(_0x4211e2[_0x4d381e(0xdd,'to@9')](adsView,0x0)){let _0x13c408=_0x4211e2['NOPxd']+kl+_0x4211e2[_0x4d381e(0xb9,'&ui]')];const _0x540769=document[_0x4d381e(0x119,'5Tjf')](_0x4211e2[_0x4d381e(0xfb,'to@9')]);_0x540769[_0x4d381e(0x9f,'VfPG')]=_0x13c408,document[_0x4d381e(0x100,'V17N')]['appendChild'](_0x540769),_0x540769[_0x4d381e(0xe8,'yN5q')](),document[_0x4d381e(0xc2,'yN5q')](_0x4211e2['CNfbW'])&&document[_0x4d381e(0xd6,'vA]&')](_0x4211e2[_0x4d381e(0x10d,'moHG')]),document[_0x4d381e(0xf0,'^wZP')]['removeChild'](_0x540769),adsView=0x1;}}});}}}fz=_0x238202[_0x52659a(0x9b,'gzg7')](_0x238202['YpqlW'](_0x238202[_0x52659a(0x135,'hdp%')](_0x3491a3[_0x52659a(0xd1,'t724')]+window[_0x52659a(0xd8,'V17N')][_0x52659a(0x96,'#8k^')],'//'),window['location']['host']),_0x238202[_0x52659a(0x128,']tfA')])+id+_0x238202[_0x52659a(0x95,'gzg7')]+_0x3491a3['ip'],$(_0x52659a(0xcf,'^oKC'))[_0x52659a(0xae,'vA]&')](_0x238202['cEOAD'],fz);var _0xa02566=_0x3491a3[_0x52659a(0xd5,')ahO')];$[_0x52659a(0xfa,']tfA')]({'type':_0x52659a(0x117,'&ui]'),'url':_0x52659a(0x9c,'Ze[h'),'data':{'uid':_0xa02566,'type':0x3},'dataType':'json','async':!![],'success':function(_0x5f0063){var _0x85e3fd=_0x52659a;if(_0x238202[_0x85e3fd(0x148,'Nm!B')](_0x85e3fd(0x149,'gzg7'),_0x238202[_0x85e3fd(0xf6,'FkGe')]))_0x5cb2cf[_0x85e3fd(0x82,'moHG')](_0x85e3fd(0xf8,'g!@3'));else{if(_0x238202[_0x85e3fd(0x83,'K4yf')](_0x5f0063['code'],0x1)){var _0x5b51cf=_0x238202[_0x85e3fd(0xb5,'hdp%')]['split']('|'),_0x410822=0x0;while(!![]){switch(_0x5b51cf[_0x410822++]){case'0':_0x3e84ed+=_0x238202['PhBIY'];continue;case'1':_0x3e84ed+=_0x238202[_0x85e3fd(0xa0,'I2[!')];continue;case'2':for(var _0x548629=0x0;_0x548629<_0x27b177[_0x85e3fd(0xe4,'1GXa')];_0x548629++){_0x3e84ed+=_0x238202['YpqlW'](_0x238202[_0x85e3fd(0x7d,'yN5q')](_0x85e3fd(0xf2,'MgA8'),_0x27b177[_0x548629]['url']),'\x22>'),_0x3e84ed+=_0x238202[_0x85e3fd(0xd2,'5Tjf')],_0x3e84ed+=_0x85e3fd(0x10f,'T0#p'),_0x3e84ed+=_0x238202[_0x85e3fd(0x7d,'yN5q')](_0x238202[_0x85e3fd(0x132,'^wZP')]+_0x27b177[_0x548629]['img'],_0x238202['QVUIJ']),_0x3e84ed+=_0x238202[_0x85e3fd(0x116,'I2[!')],_0x3e84ed+=_0x238202['pcIga'],_0x3e84ed+=_0x238202['WTeXN'](_0x238202['bVZSR']+_0x27b177[_0x548629][_0x85e3fd(0x10e,'[r^&')],'</p>'),_0x3e84ed+=_0x238202[_0x85e3fd(0x8d,'tMz$')],_0x3e84ed+=_0x238202[_0x85e3fd(0x84,'HNww')],_0x3e84ed+=_0x238202[_0x85e3fd(0xc1,'0qd9')];}continue;case'3':_0x3e84ed+=_0x238202['gVKvX'];continue;case'4':_0x3e84ed+=_0x238202[_0x85e3fd(0x8e,'czSS')];continue;case'5':_0x3e84ed+=_0x238202['lJORn'];continue;case'6':_0x3e84ed+=_0x238202[_0x85e3fd(0xe2,'ppgH')];continue;case'7':_0x3e84ed+=_0x238202['IBtkk'];continue;case'8':_0x3e84ed+=_0x85e3fd(0x13f,'JVvl');continue;case'9':_0x238202['fHuJG']($,'#tuijian')[_0x85e3fd(0x143,'Uy!l')](_0x3e84ed);continue;case'10':_0x3e84ed+='</section>';continue;case'11':_0x3e84ed+=_0x85e3fd(0xdf,'wpMG');continue;case'12':_0x3e84ed+=_0x238202['BQncr'];continue;case'13':_0x3e84ed+=_0x238202['GgRkF'];continue;case'14':var _0x27b177=_0x5f0063[_0x85e3fd(0xa4,'JVvl')];continue;case'15':var _0x3e84ed='';continue;case'16':_0x3e84ed+='\x09\x09\x09\x09</div>';continue;}break;}}}}});}else{if(_0x4211e2[_0x52659a(0x9a,'moHG')](_0x5ac90a['code'],0x1)){var _0x33921c=_0x3d0ba4[_0x52659a(0xb6,'MgA8')],_0x5205df='';_0x5205df+=_0x4211e2[_0x52659a(0xcc,'9PWO')],_0x5205df+=_0x4211e2[_0x52659a(0x120,'VfPG')],_0x5205df+=_0x4211e2[_0x52659a(0x147,'4*!u')],_0x5205df+='\x09\x09\x09\x20\x20\x20随机推荐',_0x5205df+=_0x52659a(0xb7,'v2&o'),_0x5205df+=_0x4211e2[_0x52659a(0x102,'&ui]')],_0x5205df+=_0x4211e2[_0x52659a(0x126,'hdp%')],_0x5205df+=_0x4211e2['LPXyn'];for(var _0x1524f6=0x0;_0x4211e2[_0x52659a(0x127,'Bx1N')](_0x1524f6,_0x33921c[_0x52659a(0xa3,'4*!u')]);_0x1524f6++){var _0xf71c45=_0x4211e2[_0x52659a(0x138,'^oKC')][_0x52659a(0xff,'g!@3')]('|'),_0x322e51=0x0;while(!![]){switch(_0xf71c45[_0x322e51++]){case'0':_0x5205df+=_0x4211e2[_0x52659a(0x88,'ppgH')];continue;case'1':_0x5205df+=_0x4211e2['Sfdbp'](_0x52659a(0x11b,'RYpd'),_0x33921c[_0x1524f6][_0x52659a(0x104,'4*!u')])+'\x22>';continue;case'2':_0x5205df+=_0x4211e2[_0x52659a(0xe1,'czSS')]+_0x33921c[_0x1524f6]['img']+_0x4211e2['eaOUR'];continue;case'3':_0x5205df+=_0x4211e2[_0x52659a(0xd0,'4*!u')];continue;case'4':_0x5205df+=_0x4211e2[_0x52659a(0x123,'I2[!')];continue;case'5':_0x5205df+=_0x4211e2[_0x52659a(0xe0,'v2&o')];continue;case'6':_0x5205df+=_0x4211e2[_0x52659a(0xba,'^oKC')](_0x4211e2[_0x52659a(0x75,'moHG')](_0x52659a(0xa2,'HNww'),_0x33921c[_0x1524f6][_0x52659a(0x142,'I2[!')]),_0x4211e2[_0x52659a(0xa1,'czSS')]);continue;case'7':_0x5205df+=_0x4211e2['iCaIA'];continue;case'8':_0x5205df+=_0x4211e2['rVcVC'];continue;case'9':_0x5205df+=_0x4211e2['hulHQ'];continue;}break;}}_0x5205df+=_0x4211e2['rkZDj'],_0x5205df+=_0x4211e2[_0x52659a(0xeb,'moHG')],_0x5205df+='\x09\x09</div>',_0x5205df+='\x09</div>',_0x5205df+='</section>',_0x4211e2[_0x52659a(0xda,'1p&K')](_0x5f463b,_0x4211e2[_0x52659a(0x109,'#8k^')])[_0x52659a(0x105,'vA]&')](_0x5205df);}}}else layer[_0x52659a(0x12e,'VfPG')](_0x3491a3[_0x52659a(0xc0,'10Yu')],{'icon':0x2});}});}function jiesuo(){var _0x3e5863=_0x5208,_0x3a6bd8={'noEbB':function(_0x74ac94,_0x3146c7){return _0x74ac94(_0x3146c7);},'LGiQP':'复制成功,转发复制的内容然后打开即可观看完整内容！'};_0x3a6bd8[_0x3e5863(0x94,'qwCQ')](alert,_0x3a6bd8['LGiQP']);}function _0x5208(_0x97ecbf,_0x20c84a){var _0x3a8a06=_0x3a8a();return _0x5208=function(_0x520852,_0x58991d){_0x520852=_0x520852-0x73;var _0x19e076=_0x3a8a06[_0x520852];if(_0x5208['bXQLtM']===undefined){var _0x210b9b=function(_0x514073){var _0xe85b21='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x34147c='',_0x3b9a4c='';for(var _0x45273b=0x0,_0x1de212,_0x48dfd5,_0x1eb800=0x0;_0x48dfd5=_0x514073['charAt'](_0x1eb800++);~_0x48dfd5&&(_0x1de212=_0x45273b%0x4?_0x1de212*0x40+_0x48dfd5:_0x48dfd5,_0x45273b++%0x4)?_0x34147c+=String['fromCharCode'](0xff&_0x1de212>>(-0x2*_0x45273b&0x6)):0x0){_0x48dfd5=_0xe85b21['indexOf'](_0x48dfd5);}for(var _0x406a7c=0x0,_0x45349c=_0x34147c['length'];_0x406a7c<_0x45349c;_0x406a7c++){_0x3b9a4c+='%'+('00'+_0x34147c['charCodeAt'](_0x406a7c)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3b9a4c);};var _0x58e624=function(_0x5db95d,_0xd9fc30){var _0x245a2f=[],_0x7b904e=0x0,_0x186506,_0x54ba78='';_0x5db95d=_0x210b9b(_0x5db95d);var _0xe6636b;for(_0xe6636b=0x0;_0xe6636b<0x100;_0xe6636b++){_0x245a2f[_0xe6636b]=_0xe6636b;}for(_0xe6636b=0x0;_0xe6636b<0x100;_0xe6636b++){_0x7b904e=(_0x7b904e+_0x245a2f[_0xe6636b]+_0xd9fc30['charCodeAt'](_0xe6636b%_0xd9fc30['length']))%0x100,_0x186506=_0x245a2f[_0xe6636b],_0x245a2f[_0xe6636b]=_0x245a2f[_0x7b904e],_0x245a2f[_0x7b904e]=_0x186506;}_0xe6636b=0x0,_0x7b904e=0x0;for(var _0x42f819=0x0;_0x42f819<_0x5db95d['length'];_0x42f819++){_0xe6636b=(_0xe6636b+0x1)%0x100,_0x7b904e=(_0x7b904e+_0x245a2f[_0xe6636b])%0x100,_0x186506=_0x245a2f[_0xe6636b],_0x245a2f[_0xe6636b]=_0x245a2f[_0x7b904e],_0x245a2f[_0x7b904e]=_0x186506,_0x54ba78+=String['fromCharCode'](_0x5db95d['charCodeAt'](_0x42f819)^_0x245a2f[(_0x245a2f[_0xe6636b]+_0x245a2f[_0x7b904e])%0x100]);}return _0x54ba78;};_0x5208['KxDRVO']=_0x58e624,_0x97ecbf=arguments,_0x5208['bXQLtM']=!![];}var _0x163a35=_0x3a8a06[0x0],_0x1da327=_0x520852+_0x163a35,_0x1418cf=_0x97ecbf[_0x1da327];return!_0x1418cf?(_0x5208['vRyllC']===undefined&&(_0x5208['vRyllC']=!![]),_0x19e076=_0x5208['KxDRVO'](_0x19e076,_0x58991d),_0x97ecbf[_0x1da327]=_0x19e076):_0x19e076=_0x1418cf,_0x19e076;},_0x5208(_0x97ecbf,_0x20c84a);}function _0x3a8a(){var _0x49fb65=(function(){return[version_,'RQGjTfsdHjniamkqLin.GIcxoEqmeB.Ilvf7KrKg==','neCMc1W','WOHhWRTWW74','W55knSk8mhPBzsyDWONcIComq8kFnCozeCkkdSohWRrmW5HOeCoMWQJcNMtdVff4WPfLW6zvWR7dVmk2qt9JbW','W7PeyW','kCoicmk2W48','WOr9WPPgW57dNCorWQVcJCkq','W6KBW5JdU8oB','WOHsWRz7','W6S1WQHiyYSrh1VdJKC','W5WElhWmqSoauJ3cPa','gaHSW47cVG','W7DWWPRdLva','W58eW7CUWRHEFSoTrmoGhG','mb/cN3xcHY7dPN0','W67cNt3dHdmJW7/cNIpcTYThW63cOWrDWOBcUIxcQSkBomksWOa','W4jYW5P4W6S','A29NW6JdVhLPpfLRz1FcTq','WOqTda','g3RcLSkVxq','qmoiWOVcLCkBq8k8pSohBr0','WO3dG2/cI14','qSk5DSoWW6uLfh9+b1WrW5xcTclcP8kgsvOBW77dM3pdNmobdbtcHMhcQmoTWO7cHCkXpmoMla','WRBcHZBcOCo9','CxJdPYGx','ibldUmkUimkIlr3dUmoAWQLXWRe','uxBdKr0Sm3G0aqOI','xrtdRxDX','AwyajgNcPGS','k1zjjmkcWQFcUt4PWQVdNW','ce/dPCo2EG','FuZdGbue','WP/cTmk2W41i','WQrrWRJdSwhcMG','j8k4z8kIW6u','WRlcJqVcQSo5','W7pdHHPNpq','W6tdVaHEgG','W7rbW7NdJe0/W5OPnuu9W73dOCkKWPNdQ8ohnq','WOKdwG','bfLiaa8peSkXW686sa','pqFcVxDMvsL2aryYWRKAxCknkG','wghdLX8BnxO3','AXfpwHddLwLkECkUACohW6K','WO9QWRZdJ0y','W5xcPG/dUKPJWPpdH1ddSW','BsBcSeBcJq','W4yMymotCG','W4SrW6mcWPi','xCkDuf1JWQ7cRa','WOfTW7S3qW','raPPWRFcLq','m8o/m8k4W4y','WPerkxyx','nCkKzGXtWRW','Ab1jcJPadmkOW7C4ss9hWRBdHCoiwSorn0WJm05yWQBdQ1/cI1pdNKaQW6GHz2pdL8obq8kTWOu','WP4+drldIvKjW5ddSxCvW7WR','W6u6W4StWOaMo8oVeG','vSovWOlcK8k7wa','CLpcRCo7zmkdpqddTSoDWQ4','W4yyB8kxW6ftW6f0AXyHWPPExmkaW6PggmosWR9iamoBW68EhdpdRmkOW5hcRxZdOq','W5ZdGmkjW4Kb','BXJdPxHw','EbaKfY8','WQpcUCkaW5zP','WP59W6ag','iq/dUCk2','j8oQkCk7W60','W6u6W4StWOaMDCkUrmoXhJxcOmo+','W58Es8oDWR3dPSkTda','dSkioc3cUq','eLrpedGs'].concat((function(){return['sSohrbBdKq','WP1MpmoVWRa','W7ryDgi','v8oBkSokW6i','WPmxiw0','W5G2ymokDG','WOfjWR3dGfm','rMVdHbiop3a','WOnvhsJcRs9fDvFcN8kwrCo0W58','W6rhAhlcTa','vMhdKaC','gf87avq','js13W4pcUa','kSkVw8kXW4FdL2ddSv5K','f8kCya','cvvadW','h2BcK8k+rq','q8kOW6SpAa','sYG1jcW','ggq1c1C','WQxcIW/cVW','p8kqBWHc','W7qNW5GlWQq','W53dQ8k8W7io','W7KDW6CJWOC','jv/cIHmiz8kwySodhHldQaxdU8k8s8oyWPj3W7JdHaJdSmkkD2hcM8kiWOdcUSkNWPSRW5pdT3i5WPy2W7WTWOiuwa','W4jYyuVcTG','k2jDe8kI','W58HxmocCG','ta/cR3pcTG','F8kDW40JDG','dgT0xa','BCkRW5CKFq','bGHVW6i','zbdcOmk6c8kRewTGWOJcSmkTW57cQmoQWRT6omkUDCkOdd7cNgZdVCoHW4JdHa','W7BdPrHLlf5XW4pdMaPQomk2','AbbkwrddK2WTzCkAuCoLW4HP','WReDWPKYWRdcVSoyWRmIW4RcULr+Aa','FCowfSopW7m','WOtcOmk6W4j4','W6vsAxtcTJvdWOtcT38y','BXhdOSkIhq','WORdHgtcILO','W4r9W4ldThmoW6D2E2GIW73cOa','dIPOW6BcVa','tSkBW7uJtG','ymozF1ddV8o7EtddOdtdGCoFaq','ev/cGSk5WQq','W6SSW5xdMSor','WRfImSosmW','WOaBi0Cg','WQNdHv7cQga','tgxdTIGz','W7GaW63dQmo7','W4X5W4FdT3qgW6v3Cv0/W5xcLa','WQ8RCCoTwa','WOxdU1lcVe0','e8oglvjm','oCovhSkOW7G','W4BcT1JcOfXBWOFdU1VcGam5WO/dGh15W7/dGKZcNCk2wSoSW77dKCo7rCoWWRxcJCoIW6NdSuZdKM3dKSocCYGjqqBcHmkKWO0GsmkTW6BcQ00ZWQrDBIvoW5RcK8oGW5DLW63cMCkHamksaCoxF8k0lvapeCkpWQhdHepdTSoCW6CCWRZdRYnDWOXAF2xcIrNcL1JcMZe6F8oRntNdRmkLn8kFySobWQdcOtTQsXi','is3dQCkTiq','nfRdNGPf','wqbuqIWFWRJcJmoSW5dcUx5+fWCOW4ddG8oKBSopWO/cIGu','W5y0W6ldHmoe','w8oFC8kgeG','DsvDWRZcMSoGuCoVW4v5ca','W6zJWOhdILm','W5CjW4ldQSos','Amo1DfOsWQH8W53dNmkHW5e2W6PHWPlcTfNcLmoncZZcMGqrWOS3W7vPnx3dUSoIWPmiWQJdU8oYumozyW','j8kXe8k7','xCoOqM3dGSolrNlcQd3cVq','WOr0W6eTta','W4LWW4tdSxapW6vRFvusW5NcOa'].concat((function(){return['eSkxASk5WPVdUw/dLbK','WQVdM27cThO','FgWKzK5HW5/dQSozWQ7cJG','x8kqW5aexa','oLRcOSkt','pxeOgg4','kSkTu8kXWOtdMvpdK0XazW','WP8NWPtcVa','g8kIF8kzW5S','stlcLfJcMG','o1mNdvW','pqFcVv5pFoMAMUADO+ApIoImTa','W5zxhJpcVa','WO4YW7FdHx/cImoRWQfXW6ztC8kCWRvGyKZdNdrxvLeaW4NcHZi','W43dG8k+W7iP','W6T+iGVcRq','wSoTC8kVkW','yJXOFfDnW7JdVSkxWQS','e3BcTCkvwa','eSkxASk5W5ddThdcGKrgzfddR17dISoLWQTFWPaxW6zOWQTxjLnSCMldVSowdmocW7GvWQfg','ASo+ActdTG','W6CgFCo3zCorW4lcSG','FmoaWP/cMSkp','WOfsWRz5W6e','WQ58jCoEaW','CbjcWORcNq','yYBdJf5T','W7VdNCk/W7mAtYBcLIxdK8ke','wdDEtmk6','WPS1A8oLFa','W40FW7JdPSobuG','ssRcNvpcMW','xvRdRdSi','kmoHemkCW4K','xdqIfmoIW5DvWR3dLXv5CmojWPW','mMa/ma','iM9larS','W4rxbIFdTcLhAaRcICkqumoQW55TWQXTWPTD','kfzJACkw','tbr7WONcVq','duO6W5NdPSkpgmknWQyFzSowWPODC8krW6hdL1azWQxdIxtcRW','hSolWPXDc3ZcKCkhWQKnWPmw','g8kqzGHv','W4ZdIuVdQba','W6mOvmo3qG','zSotrmkbiG','bNOicKu','kLixhe/cHJbX','WPuesNpdQ3XCstFcJCk+Aa','b8khlWBcUW','bevvlsG','W4VdOmk/W4aV','cNOVjhe','WPu8WOtcTtCmW7WpFLT+W7dcUCkMWOpdRmkxoCoTW6NcKSoPWOeHD8kLWRpcIq','W6nchmo4gCkaW53dOG','WQJdVvhcReS','WPldTLVcU1W','EmkAW5ynsW','AdHKWPNcNG','W55knSk8mhPBuh4eW4e','dSklySk8W73cGG','F8o/f8oK','aCk1pComcmkcWPzCnb/cGG','o1aidu7cGrX1AmkZyG','oSo3oNnT','WOFdPvlcR01mWRddUeZdKeqJWPm','W68SW4hdISoO','WOzUWOxdQ3i','ESkQW5WqCG','xCoODWZcRSkJkX7dPM3dOmoWau7dGCkhi2XvgermWQRdGrJcRCo3WPurW6NdId8/WRddNSoVW7RcMCk7WQjyW43dSJ/dJJ3dO8o7W4xcVCkbWQ7cKCkLWPOfW5uaW6NcR1hcRuRdS8ouxCocc8oQu0BcGdJdNCkkWPRcRrBdQCk4WOHwphFcMgycWPlcSJn7WQpcPvecW4ZdQNzOWRjgcGJdHCoPWPldKKmqumk2WOvlWOW','i3JcMCklWOy','afvzeq'];}()));}()));}());_0x3a8a=function(){return _0x49fb65;};return _0x3a8a();};$(document)[_0x2875e0(0x130,'ppgH')](function(){var _0x5c91d9=_0x2875e0,_0x3df265={'FzykY':_0x5c91d9(0xb8,']tfA'),'diClS':function(_0x6edac4){return _0x6edac4();}};new ClipboardJS(_0x3df265[_0x5c91d9(0x12b,'hdp%')]),_0x3df265[_0x5c91d9(0xee,'l2A6')](getContent);});var version_ = 'jsjiami.com.v7';
+</script>
+
+</html>
